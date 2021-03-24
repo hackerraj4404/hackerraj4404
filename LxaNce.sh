@@ -2,7 +2,7 @@
 #BY NOOB HACKERS (SUBSCRIBE US ON YOUTUBE)
 #####3#3#
 check(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/spamx/master/update.v1.1 2>/dev/null; then
+if wget --spider https://raw.githubusercontent.com/lxance/spamx/master/update.v1.1 2>/dev/null; then
 cd $HOME/spamx/server/updates
 echo "spmx" > update.txt
 else
@@ -11,8 +11,8 @@ fi
 }
 check
 option(){
-if [ -f "$HOME/spamx/server/updates/update.txt" ];then
-cd $HOME/spamx/server/updates
+if [ -f "$HOME/lxance/server/updates/update.txt" ];then
+cd $HOME/lxance/server/updates
 bash update.sh
 else
 echo " "
@@ -20,17 +20,17 @@ fi
 }
 option
 check1(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/spamx.v.1 2>/dev/null; then
-cd $HOME/spamx/server/updates
-echo "spmx" > patch.txt
+if wget --spider https://raw.githubusercontent.com/lxance/patchupdateznh/lxance.v.1 2>/dev/null; then
+cd $HOME/lxance/server/updates
+echo "lxance" > patch.txt
 else
 echo
 fi
 }
 check1
 option1(){
-if [ -f "/data/data/com.termux/files/spamx/server/updates/patch.txt" ];then
-cd $HOME/spamx/server/updates
+if [ -f "/data/data/com.termux/files/lxance/server/updates/patch.txt" ];then
+cd $HOME/lxance/server/updates
 bash patch.sh
 else
 echo " "
@@ -51,7 +51,7 @@ echo -e '
             ░                 ░  ░       ░    ░    ░  ' 
 echo -e "                  \e[92m >\e[93m By Noob Hackers \e[92m<"
 echo -e "               \e[92m>\e[93m github.com/noob-hackers \e[92m<"
-echo -e "               \e[92m >\e[91m YOUTUBE:-\e[92mNOOB HACKERS \e[92m<"
+echo -e "               
 echo
 }
 men(){
@@ -71,7 +71,7 @@ then
 spams
 elif [ $opt1 = "2" ];
 then
-am start -a android.intent.action.VIEW -d https://shrinke.me/spamxcc > /dev/null 2>&1
+am start -a android.intent.action.VIEW -d https://shrinke.me/lxancecc > /dev/null 2>&1
 bnr
 men
 elif [ $opt1 = "3" ];
@@ -79,7 +79,7 @@ then
 abot
 elif [ $opt1 = "4" ];
 then
-cd /data/data/com.termux/files/home/spamx/server/updates
+cd /data/data/com.termux/files/home/lxance/server/updates
 bash update.sh
 elif [ $opt1 = "5" ];
 then
@@ -145,7 +145,7 @@ bnr
 men
 }
 anonmenu(){
-if [ -f /data/data/com.termux/files/home/spamx/server/anon/dat.txt ];
+if [ -f /data/data/com.termux/files/home/lxance/server/anon/dat.txt ];
 then
 anondat
 else
@@ -153,7 +153,7 @@ anonmen
 fi
 }
 anondat(){
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 dt=$(date +%A)
 dro=$(cat dat.txt)
 if [ "$dt" == "$dro" ];
@@ -176,7 +176,7 @@ sleep 4.0
 bnr
 men
 else
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 rm *.txt
 anonmen
 fi
@@ -225,7 +225,7 @@ fi
 }
 auth1() {
 clear
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 remn=$(cat ctt.txt) >/dev/null 2>&1
 clear
 echo -e "\e[93m
@@ -268,7 +268,7 @@ echo " "
 fi
 }
 anondd(){
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 name=remin
 if [[ -e $name.txt || -L $name.txt ]] ; then
    i=0
@@ -281,7 +281,7 @@ fi
 touch -- "$name".txt
 
 #anonct=$(ls -l | grep -v ^l | wc -l)
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 anonct=$(find remin*.txt | wc -l)
 if [[ $anonct = "1" ]]; then
 #echo "20 remaining"
@@ -367,13 +367,13 @@ echo "                      xx ERROR....! xx"
 fi
 }
 anoncrk(){
-FILE=/data/data/com.termux/files/home/spamx/server/anon/limit.txt
+FILE=/data/data/com.termux/files/home/lxance/server/anon/limit.txt
 if [ -f "$FILE" ]; then
 anondot
 fi
 }
 anondot(){
-cd /data/data/com.termux/files/home/spamx/server/anon
+cd /data/data/com.termux/files/home/lxance/server/anon
 dt=$(date +%A)
 chk=$(date +%A > dat.txt)
 dro=$(cat dat.txt)
@@ -400,7 +400,7 @@ echo -e "\e[93m
                 __/   \e[91m-*-\e[93m
               *d08b*  \e[91m'%\e[93m
               0088MM
-              *9MMP* SPAMX \e[91mV.1\e[92m BY NOOB HACKERS\e[93m
+              *9MMP* SPAMX \e[91mV.1\e[92m BY LxaNce\e[93m
 "
 echo -ne "NUMBER: \e[0m"  
 read num
@@ -424,9 +424,9 @@ echo -e "\e[93m
         ╰━━━━━━━━━━━╯
 "
 killall -9 php >/dev/null 2>&1 
-cd /data/data/com.termux/files/home/spamx/server/callnsms
+cd /data/data/com.termux/files/home/lxance/server/callnsms
 php -S localhost:8080 >/dev/null 2>&1 &
-#cd /data/data/com.termux/files/home/spamx/server/callnsms
+#cd /data/data/com.termux/files/home/lxance/server/callnsms
 curl -L -s "http://localhost:8080/?mo=$num&submit=Bomb+Now" >/dev/null 2>&1
 sleep 1.0
 curl -L -s "http://localhost:8080/?mo=$num&submit=Bomb+Now" >/dev/null 2>&1
@@ -489,7 +489,7 @@ echo -e '\e[91m
                    ────▌──▐────
 '
 echo -e "\e[93m                  CALL ME \e[92mNITRO" | pv -qL 10                                                                    
-echo -e "\e[93m             IAM FROM \e[92mNOOB HACKERS" | pv -qL 10                                                                 
+echo -e "\e[93m             IAM FROM \e[92mLxaNce" | pv -qL 10                                                                 
 echo -e "\e[93m       IM A \e[92mGEEK\e[93m WITH LOTS OF EXCITEMENT" | pv -qL 10
 echo -e "\e[93m             HOPE YOU LIKE THIS SCRIPT" | pv -qL 10            
 echo -e "\e[93m         OOPS... I TALK A LOT SRY FOR THAT " | pv -qL 10                                                              
