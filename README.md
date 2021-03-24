@@ -52,7 +52,7 @@ LxaNce is a all in one Bombing+Spam tool from this tool you can send anonymous m
 * `pkg install python2 -y`
 * `pkg install git -y`
 * `pip install lolcat`
-* ` git clone https://github.com/lxance/spamx`
+* ` git clone https://github.com/lxance/lxance`
 * `cd $HOME`
 * `ls`
 * `cd spamx`
